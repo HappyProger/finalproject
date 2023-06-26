@@ -1,0 +1,148 @@
+
+ .paragraphHelvetica {
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 400;
+     font-size: 1.6rem;
+     line-height: 1.5;
+ }
+
+ .navigationHelvetica {
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 500;
+     font-size: 1.2rem;
+     line-height: 1.8;
+ }
+ .navigationOpenSans {
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-weight: 500;
+     font-size: 1.2rem;
+     line-height: 1.8;
+ }
+
+
+ body {
+     margin: 0 40px 0 40px;
+ }
+
+ .header {
+     background-color: rgb(5, 191, 219);
+ }
+
+ .img {
+     width: 150px;
+     height: 150px;
+ }
+
+ .container {
+     
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ @media screen and (max-width: 576px) {
+     .logg-container {
+         display: none;
+     }
+
+     .clinic-heading {
+         text-align: center;
+     }
+ } 
+
+
+
+
+ /* Стили для модального окна */
+ .modal {
+     display: none;
+     /* По умолчанию модальное окно скрыто */
+     position: fixed;
+     /* Положение модального окна фиксированное */
+     z-index: 1;
+     /* Позиция модального окна над всеми остальными элементами */
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     overflow: auto;
+     /* Включение прокрутки, если контент окна не помещается на экране */
+     background-color: rgba(0, 0, 0, 0.4);
+     /* Полупрозрачный фон */
+ }
+
+ /* Стили для содержимого модального окна */
+ .modal-content {
+     background-color: #fefefe;
+     margin: 15% auto;
+     /* Расположение посередине экрана, отступ от верхнего края 15% */
+     padding: 20px;
+     border: 1px solid #888;
+     width: 50%;
+     /* Ширина содержимого окна */
+ }
+
+ /* Стили для кнопки "Закрыть" */
+ .close {
+  float: right;
+     color: #888;
+     float: right;
+     font-size: 38px;
+     font-weight: bold;
+     cursor: pointer;
+ }
+
+ .close:hover,
+ .close:focus {
+     color: #000;
+     text-decoration: none;
+     cursor: pointer;
+ } 
+ label { 
+    
+     display: block;
+     margin-bottom: 10px;
+     font-weight: bold;
+ }
+
+ input[type="text"],
+ input[type="tel"],
+ input[type="email"] {
+    width: 90%;
+     padding: 8px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     font-size: 14px;
+ }
+
+
+ /* Custom select styles */
+ select {
+     width: 90%;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     background-color: #fff;
+     font-size: 16px;
+     
+
+ }
+
+ input[type="date"],
+ input[type="time"],
+ input[type="submit"] {
+     padding: 8px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     margin-bottom: 10px;
+ }
+
+ input[type="submit"] {
+     background-color: #007bff;
+     color: #fff;
+     cursor: pointer;
+ }
+
+ input[type="submit"]:hover {
+     background-color: #0056b3;
+ }
+ 

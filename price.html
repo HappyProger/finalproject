@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="price.css">  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-REKapd6L0rWRWE2e2yFMxmu68OXZL8A3S1Nlmk/gJO29dPfl5T0EzH6X6geIOfTdp5nrgHf0TNYzhimjOFLzng=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/png" href="fav.jpg">
+
+    <title>Price List of Medical Services</title>
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class=" col-xl-3 col-lg-3 col-md-3 col-sm-6" style="text-align: center;">
+                <div class="logg-container">
+                    <img src="logg.jpg" class="img-fluid img" id="photo">
+                </div>
+
+            </div>
+            <div class=" col-xl-2 col-lg-3 col-md-3 col-sm-6" style="text-align: center;">
+            <h3 class="clinic-heading"> «IHelp» </h3>
+                <h4 class="clinic-heading">Medical center</h4>
+        </div>
+        <div class=" col-xl-4 col-lg-3 col-md-3 col-sm-6" style="text-align: center;">
+            <h6>Address: Astana city</h6>
+            <h6>Street: Kabanbay batyr 17</h6>
+            <h6>Phone: +7 700 749 3305</h6>
+            <h6>E-mail:ihelp@gmail.com</h6>
+        </div>
+        <div class=" col-xl-3 col-lg-3 col-md-3 col-sm-6" style="text-align: center;">
+            <h6 class="mb-0">Operating mode:</h6>
+            <h6 class="mb-0">Mon-Fri: 8.00 - 20.00</h6>
+            <h6 class="mb-0">Sat: 9.00 - 13.00</h6>
+       
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navigationHelvetica" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="final.html">Main</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="price.html">Price</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="final.html#aboutcenter">About Center</Center></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="final.html#cont">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="feedback.html">Feedback</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="tabl">
+<table class="navigationHelvetica">
+    <tr>
+        <th class="headingGeorgiaProRegular">Service name</th>
+        <th class="headingGeorgiaProRegular">Price</th>
+    </tr>
+    <tr>
+        <td class="navigationOpenSans" id="therapist">Therapist</td>
+        <td class="navigationOpenSans">7000 tg</td>
+    </tr>
+    <tr>
+        <td class="navigationOpenSans" id="cardiologist">Cardiologist</td>
+        <td class="navigationOpenSans">6000 tg</td>
+    </tr>
+    <tr>
+        <td class="navigationOpenSans">Gastroenterologist</td>
+        <td class="navigationOpenSans">4000 tg</td>
+    </tr>
+    <tr>
+        <td class="navigationOpenSans">Gynecologist</td>
+        <td class="navigationOpenSans">4500 tg</td>
+    </tr>
+    <tr>
+        <td class="navigationOpenSans">Dermatovenereologist</td>
+        <td class="navigationOpenSans">3500 tg</td>
+    </tr>
+    <tr>
+        <td class="navigationOpenSans">Urologist</td >
+        <td class="navigationOpenSans">2000 tg </td >
+    </tr>
+    <tr>
+        <td class="navigationOpenSans">Endocrinologist</td >
+        <td class="navigationOpenSans">1000 tg </td>
+    </tr>
+    <tr>
+        <td class="navigationOpenSans">Surgeon</td >
+        <td class="navigationOpenSans">11000 tg </td >
+    </tr>
+    <tr>
+        <td class="navigationOpenSans">Ultrasound doctor</td>
+        <td class="navigationOpenSans">12000 tg </td >
+    </tr>
+    <tr>
+        <td class="navigationOpenSans">Neurologist</td >
+        <td class="navigationOpenSans">9000 tg </td >
+    </tr>
+    <tr>
+        <td class="navigationOpenSans">Otorhinolaryngologist</td>
+        <td class="navigationOpenSans">8000 tg </td >
+    </tr>
+    <tr>
+        <td class="navigationOpenSans">Masseur</td>
+        <td class="navigationOpenSans">3000 tg </td>
+    </tr>
+   
+</table> 
+</div>  
+<script>
+    const therapist = document.getElementById('therapist');
+    const cardiologist = document.getElementById('cardiologist');
+    // Получите ссылки на остальные элементы по аналогии
+
+    therapist.addEventListener('click', function () {
+        redirectTo('therapist');
+    });
+
+    cardiologist.addEventListener('click', function () {
+        redirectTo('cardiologist');
+    });
+
+    // Добавьте обработчики событий для остальных элементов по аналогии
+
+    function redirectTo(serviceName) {
+        window.location.href = 'services.html?service=' + serviceName;
+    } 
+    
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

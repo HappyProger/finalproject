@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="services.css">
+    <title>Ihelp Medical cliniс</title>
+    <link rel="icon" type="image/png" href="fav.jpg">
+</head>
+<body> 
+<header class="header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class=" col-xl-3 col-lg-3 col-md-3 col-sm-6" style="text-align: center;">
+                <div class="logg-container">
+                    <img src="logg.jpg" class="img-fluid img" id="photo">
+                </div>
+
+            </div>
+            <div class=" col-xl-2 col-lg-3 col-md-3 col-sm-6" style="text-align: center;">
+            <h3 class="clinic-heading"> «IHelp» </h3>
+                <h4 class=" clinic-heading">Medical center</h4>
+            </div>
+            <div class=" col-xl-4 col-lg-3 col-md-3 col-sm-6" style="text-align: center;">
+                <h6>Address: Astana city</h6>
+                <h6>Street: Kabanbay batyr 17</h6>
+                <h6>Phone: +7 700 749 3305</h6>
+                <h6>E-mail:ihelp@gmail.com</h6>
+            </div>
+            <div class=" col-xl-3 col-lg-3 col-md-3 col-sm-6" style="text-align: center;">
+            <h6 class="mb-0">Operating mode:</h6>
+            <h6 class="mb-0">Mon-Fri: 8.00 - 20.00</h6>
+            <h6 class="mb-0">Sat: 9.00 - 13.00</h6>
+            </div>
+        </div>
+    </div>
+</header>
+    
+    
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navigationHelvetica" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="final.html">Main</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="price.html">Price</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="final.html#aboutcenter">About Center</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="final.html#cont">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="feedback.html">Feedback</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+   
+     <form>
+    <h3 class="paragraphHelvetica">  «IHelp» Center Services </h3>
+    <div class="row serv " id="услуги">
+        <ul class="list-unstyled" style="display: flex;"> <!-- убирает маркеры --> 
+            <div class="row" style="margin-left: 20px;"> 
+            <div class="col-md-4 col-sm-6 navigationOpenSans">
+                <li>
+                    <strong>Therapist</strong>
+                </li>
+                <li>
+                    <strong>Cardiologist</strong>
+                </li>
+                <li>
+                    <strong>Gastroenterologist</strong>
+                </li>
+                <li>
+                    <strong>Gynecologist</strong>
+                </li>
+            </div>
+            <div class="col-md-4 col-sm-6 navigationOpenSans">
+                <li>
+                    <strong>Dermatovenereologist</strong>
+                </li>
+                <li>
+                    <strong>Urologist</strong>
+                </li>
+                <li>
+                    <strong>Endocrinologist</strong>
+                </li>
+                <li>
+                    <strong>Surgeon</strong>
+                </li>
+    
+            </div>
+            <div class="col-md-4 col-sm-6 navigationOpenSans">
+                <li>
+                    <strong>Ultrasound doctor</strong>
+                </li>
+                <li>
+                    <strong>Neurologist</strong>
+                </li>
+                <li>
+                    <strong>ENT doctor (otorhinolaryngologist)</strong>
+                </li>
+                <li>
+                    <strong>Masseur</strong>
+                </li>
+            </div> 
+            </div>
+        </ul>
+    </div>    
+    </form>
+    
+<div class="row">
+    <div class="col-md-4 col-sm-12">
+        <img class="img-fluid" src="doc.jpg" alt="Врач">
+    </div>
+    <div class="col-md-8 col-sm-12">
+    <h4>You can make an appointment with a doctor yourself</h4>
+    <h4><a href="#">Online registration</a></h4>
+    <h4 style="margin-bottom: 20px;"> Or WhatsApp us </h4>
+    <h4><a style="background-color: rgb(50, 180, 50);color: white; padding: 10px; border-radius: 15px;"
+            href="https://wa.me/7007493305"> Whatsapp</a></h4>
+    </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form>
+                <h3>Online registration</h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <br>
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <br>
+    
+                <label for="service">Select a service:</label>
+            <select id="service" name="service" onchange="togglePriceField()">
+                <option selected disabled> Select service</option>
+                <option value="service1">Therapist</option>
+                <option value="service2">Cardiologist</option>
+                <option value="service3">Gastroenterologist</option> 
+                <option value="service4">Gynecologist</option>
+                <option value="service5">Dermatovenereologist</option>
+                <option value="service6">Urologist</option>
+                <option value="service7">Endocrinologist</option>
+                <option value="service8">Surgeon</option>
+                <option value="service9">Ultrasound doctor</option>
+                <option value="service10">Neurologist</option>
+                <option value="service11">ENT doctor</option>
+                <option value="service12">Masseur</option>
+            </select>
+            <br>
+            <div id="priceField" style="display: none;">
+            <label for="price">Prices:</label>
+            <input type="text" id="price" name="price" readonly>
+            <br>
+            </div>
+            <label for="date">Select date:</label>
+            <input type="date" id="date" name="date">
+            <br>
+            <label for="time">Select time:</label>
+        <input type="time" id="time" name="time" min="08:00" max="20:00" oninput="updateTimeConstraints()">
+            <br>
+            <input type="submit"  value="Make an appointment">
+        </form>
+    </div>
+</div>
+<script> 
+    document.querySelector('input[type="submit"]').addEventListener('click', function () {
+        alert('You have successfully booked an appointment with a doctor');
+    });
+
+    function updateTimeConstraints() {
+        var timeInput = document.getElementById("time");
+        var selectedDate = new Date(document.getElementById("date").value);
+        var dayOfWeek = selectedDate.getDay(); // 0 - воскресенье, 1 - понедельник, ..., 6 - суббота
+
+        // Проверка на будние дни (понедельник - пятница)
+        if (dayOfWeek >= 1 && dayOfWeek <= 5) {
+            timeInput.min = "08:00";
+            timeInput.max = "20:00";
+        }
+        // Проверка на выходные дни (суббота - воскресенье)
+        else if (dayOfWeek === 0 || dayOfWeek === 6) {
+            timeInput.min = "09:00";
+            timeInput.max = "13:00";
+        }
+    }
+</script>
+<script> 
+
+    // Открытие модального окна при клике на ссылку
+    var modal = document.getElementById("myModal");
+    var link = document.querySelector("a[href='#']");
+    link.onclick = function () {
+        modal.style.display = "block";
+    }
+    // Закрытие модального окна при клике на кнопку "Закрыть"
+    var closeBtn = document.getElementsByClassName("close")[0];
+    closeBtn.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // Закрытие модального окна при клике за его пределами
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    var inputElements = document.querySelectorAll('input');
+
+inputElements.forEach(function(element) {
+  element.addEventListener('mouseover', function() {
+    this.style.boxShadow = '0 0 5px blue';
+  });
+
+  element.addEventListener('mouseout', function() {
+    this.style.boxShadow = '';
+  });
+});
+
+
+    function togglePriceField() {
+        var service = document.getElementById("service");
+        var priceField = document.getElementById("priceField");
+        var priceInput = document.getElementById("price");
+
+        if (service.value === "service1") {
+            priceInput.value = "7000 тг";
+        } else if (service.value === "service2") {
+            priceInput.value = "6000 тг";
+        } else if (service.value === "service3") {
+            priceInput.value = "4000 тг";
+        }
+        else if (service.value === "service4") {
+            priceInput.value = "4500 тг";
+        } else if (service.value === "service5") {
+            priceInput.value = "3500 тг";
+        }
+        else if (service.value === "service6") {
+            priceInput.value = "2000 тг";
+        } else if (service.value === "service7") {
+            priceInput.value = "1000 тг";
+        }
+        else if (service.value === "service8") {
+            priceInput.value = "11000 тг";
+        } else if (service.value === "service9") {
+            priceInput.value = "12000 тг";
+        } 
+        else if (service.value === "service10") {
+            priceInput.value = "9000 тг";
+        } else if (service.value === "service11") {
+            priceInput.value = "8000 тг";
+        }
+        else if (service.value === "service12") {
+            priceInput.value = "3000 тг";
+        } 
+        if (service.value !== "") {
+            priceField.style.display = "block"; // Показать поле "Цены"
+        } else {
+            priceField.style.display = "none"; // Скрыть поле "Цены"
+        }
+    }
+</script> 
+<script> 
+ document.querySelector("form").addEventListener("submit", function (event) {
+        event.preventDefault(); // Предотвращает отправку формы
+
+        // Получите значения полей формы
+        var nameInput = document.getElementById("name").value;
+        var phoneInput = document.getElementById("phone").value;
+        var emailInput = document.getElementById("email").value;
+        var selectedDate = document.getElementById("date").value;
+        var selectedTime = document.getElementById("time").value;
+        var selectedService = document.getElementById("service").value;
+
+        // Вывод информации в консоль
+        console.log("Имя:", nameInput);
+        console.log("Номер телефона:", phoneInput);
+        console.log("Email:", emailInput);
+        console.log("Дата:", selectedDate);
+        console.log("Время:", selectedTime);
+        console.log("Услуга:", selectedService);
+    });
+
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ 
+
+
+</body>
+</html>

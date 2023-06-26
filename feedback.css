@@ -1,0 +1,51 @@
+
+ body {
+     margin: 0 40px 0 40px;
+ }
+
+ .header {
+     background-color: rgb(5, 191, 219);
+ }
+
+ .img {
+     width: 150px;
+     height: 150px;
+ } 
+ 
+
+ .container {
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ @media screen and (max-width: 576px) {
+     .logg-container {
+         display: none;
+     }
+
+     .clinic-heading {
+         text-align: center;
+     }
+ }
+ .feedback{ 
+    background-image: url(bg-feedback.jpg); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+ }
+ .feed {  
+    height: 700px;
+    background-image: url(otzyv.png); 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+ @media screen and (max-width: 476px) {
+     .feed {
+         background-image: none;
+     }
+ } 
+

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="icon" type="image/png" href="fav.jpg">
+    <title>Feedback</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class=" col-xl-3 col-lg-3 col-md-3 col-sm-6" style="text-align: center;">
+                <div class="logg-container">
+                    <img src="logg.jpg" class="img-fluid img" id="photo">
+                </div>
+
+            </div>
+            <div class=" col-xl-2 col-lg-3 col-md-3 col-sm-6" style="text-align: center;">
+            <h3 class="clinic-heading"> «IHelp» </h3>
+                <h4 class="clinic-heading">Medical center</h4>
+            </div>
+            <div class=" col-xl-4 col-lg-3 col-md-3 col-sm-6" style="text-align: center;">
+                <h6>Address: Astana city</h6>
+                <h6>Street: Kabanbay batyr 17</h6>
+                <h6>Phone: +7 700 749 3305</h6>
+                <h6>E-mail:ihelp@gmail.com</h6>
+            </div>
+            <div class=" col-xl-3 col-lg-3 col-md-3 col-sm-6" style="text-align: center;">
+                <h6 class="mb-0">Operating mode:</h6>
+                <h6 class="mb-0">Mon-Fri: 8.00 - 20.00</h6>
+                <h6 class="mb-0">Saturday: 9.00 - 13.00</h6>
+               
+            </div>
+        </div>
+    </div>
+</header>
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navigationHelvetica" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" id="main" href="final.html">Main</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="services" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="price" href="price.html">Price</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="aboutcenter" href="final.html#aboutcenter">About Center</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact" href="final.html#cont">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="feedback" href="">Feedback</a>
+                </li>
+            </ul>
+        </div> 
+    </nav> 
+   
+
+<div class="feedback"> 
+    <div class="feed"> 
+<form id="reviewForm">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" required>
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" class="form-control" id="phone" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" required>
+    </div>
+    <div class="form-group">
+        <label for="message">Feedback:</label>
+        <textarea class="form-control" id="message" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" style="width: 120px;">Send</button>
+</form>
+    </div>
+</div>
+
+
+<audio id="clickSound" src="click.mp3"></audio>
+<script>
+    var inputElements = document.querySelectorAll('input');
+
+        inputElements.forEach(function (element) {
+            element.addEventListener('mouseover', function () {
+                this.style.boxShadow = '0 0 5px blue';
+            });
+
+            element.addEventListener('mouseout', function () {
+                this.style.boxShadow = '';
+            });
+        });
+         var inputElements = document.querySelectorAll('textarea');
+
+            inputElements.forEach(function (element) {
+                element.addEventListener('oncontextmenu', function () {
+                    this.style.boxShadow = '0 0 5px blue';
+                });
+            });
+
+    function playClickSound() {
+        var audio = document.getElementById("clickSound");
+        audio.currentTime = 0; // Сбрасываем  аудио на начало
+        audio.play();
+    }
+
+    document.addEventListener("click", playClickSound);
+</script>
+<script>  
+ 
+   
+              
+
+    const submitButton = document.querySelector('.btn-primary');
+
+    submitButton.addEventListener('click', function () {
+        alert('Your message has been sent successfully');
+    });
+
+    document.getElementById('reviewForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Get input values
+        var name = document.getElementById('name').value;
+        var phone = document.getElementById('phone').value;
+        var email = document.getElementById('email').value;
+         var message = document.getElementById('message').value;
+        // Log the input values
+        console.log('Name:', name);
+        console.log('phone:', phone);
+        console.log('email:', email);
+        console.log('Message:', message); 
+        // Clear the form
+        document.getElementById('reviewForm').reset();
+    }); 
+</script> 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://kit.fontawesome.com/65dc2bb196.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
